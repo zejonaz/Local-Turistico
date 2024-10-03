@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-default: #F5F4F0;
+    --border-primary: #D9D9D9;
+    --text-primary: #1B1B1B;
+    --text-secondary: #333333;
+    --text-tertiary: #696969;
+    --text-headline: #E1624F;
+    --accent-blue: #0C51A7;
+    --accent-orange: #E95E10;
+    --accent-pink: #E5245E;
+    --accent-purple: #591B98;
+
+    --font-family: 'Open Sans', sans-serif;
+    --h1: 800 36px var(--font-family);
+    --h2: 800 32px var(--font-family);
+    --h3: 800 28px var(--font-family);
+    --headline: 800 16px var(--font-family);
+    --text: 400 16px var(--font-family);
+    --subtitle: 700 16px var(--font-family);
+}
+
+body{
+    font: var(--text);
+    color: var(--text-primary);
+    background-color: var(--background-default);
+    height: 100vh;
+    display: flex;
+}
+
+h1, h2, h3{
+    font: inherit;
+}
+
+.gray-line{
+    width: 100%;
+    border: 1px solid #80808044;
+    margin-block: 40px;
+}
+
+.headline{
+    font: var(--headline);
+    color: var(--text-headline);
+    margin-top: 64px;
+}
+
+
+h1{
+    font: var(--h1);
+}
+
+h2{
+    font: var(--h2);
+}
+
+h3{
+    font: var(--h3);
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+main p{
+    color: var(--text-secondary);
+    font-size: 14px;
+    width: 95.5%;
+}
+
+main{
+    width: 1120px;
+    margin: auto;
+    padding-inline: 64px;
+}
+
+img{
+    width: 100%;
+    border-radius: 28px;
+}
+
+.h-image{
+    height: 350px;
+}
+
+
+main section:nth-child(1) h1{
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+main section:nth-child(1) p{
+    margin-top: 24px;
+    margin-inline: auto;
+    text-align: center;
+    font-style: italic;
+}
+
+main section:nth-child(3) h2{
+    margin-block: 8px;
+}
+
+main section:nth-child(3) p{
+    margin-bottom: 64px;
+}
+
+h5{
+    font: var(--subtitle);
+    color: var(--text-secondary);
+    margin-top: 24px;
+}
+
+ul{
+    margin-bottom: 48px;
+}
+
+li{
+    position: relative;
+    left: 16px;
+    font: var(--subtitle);
+}
+
+main section:nth-child(4) li span, section:nth-child(5) li span{
+    color: var(--accent-blue);
+}
+
+main section:nth-child(6) li:nth-child(1) span{
+    color: var(--accent-purple);
+}
+
+main section:nth-child(6) li:nth-child(2) span{
+    color: var(--accent-pink);
+}
+
+main section:nth-child(6) li:nth-child(3) span{
+    color: var(--accent-orange);
+}
+
+main>p{
+    text-align: center;
+    margin: auto;
+}
+
+footer{
+    margin-block: 64px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+footer>span{
+    margin: auto;
+}
